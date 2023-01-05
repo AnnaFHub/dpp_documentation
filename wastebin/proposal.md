@@ -1,7 +1,7 @@
 ---
 title: Project Proposal
 layout: default
-parent: My Project
+parent: wastebin
 nav_order: 1
 ---
 

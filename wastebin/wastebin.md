@@ -1,5 +1,5 @@
 ---
-title: My Project
+title: wastebin
 layout: home
 has_children: true
 ---
