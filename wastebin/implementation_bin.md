@@ -2,7 +2,7 @@
 title: Implementation Bin
 layout: default
 parent: wastebin
-nav_order: 1
+nav_order: 2
 ---
 
 # Implementation of the bin
