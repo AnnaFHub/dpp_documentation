@@ -26,16 +26,16 @@ Depending on the time available and the overall results with training the AI, it
 
 ## References
 Dataset for AI Model for plastic trash recognition:
-https://github.com/AgaMiko/waste-datasets-review
+[https://github.com/AgaMiko/waste-datasets-review]
 
 Object detection with Arduino:
-https://www.teachmemicro.com/detect-objects-camera-arduino/
+[https://www.teachmemicro.com/detect-objects-camera-arduino/]
 
 Wooden Catapult:
-https://www.instructables.com/Arduino-Controlled-Catapult/
+[https://www.instructables.com/Arduino-Controlled-Catapult/]
 
 weight measurement with arduino:
-https://prilchen.de/eine-waage-mit-arduino-erstellen/ 
+[https://prilchen.de/eine-waage-mit-arduino-erstellen/] 
 
 
 ## Sketch
