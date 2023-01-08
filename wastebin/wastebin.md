@@ -10,7 +10,7 @@ Project documentation for the **Design for Physical Prototyping** course 2022/23
 
 ## Abstract
 
-TODO: Shortly summarize the intentions and ideas behind your project. 
+**TODO** Shortly summarize the intentions and ideas behind your project. 
 Lorem ipsum dolor sit amet. This project builds upon the idea of [Chindōgu](https://en.wikipedia.org/wiki/Chind%C5%8Dgu), the practice of inventing ingenious everyday gadgets that seem to be ideal solutions to particular problems, but which may cause more problems than they solve. Lorem ipsum dolor sit amet.
 
 ## Concept
@@ -23,45 +23,22 @@ The image below shows a first sketch of the wastebin.
 
 ![FirstSketch](assets/ersteSkizze.png)
 
-TODO Ergänzungen? Here you could summarize your project proposal.
+**TODO** Ergänzungen? Here you could summarize your project proposal.
 How did you plan to build your prototype? 
 Did you arrive at your idea immediately or did you iterate over it? Describe your process. 
 
-![Chopsticks](assets/chopsticks.jpg)
 
 ## Implementation
 
-Describe how you implemented your project. Which iterations did go through? What did work and what did not work? Did you adapt your original idea to practical difficulties during implementation?
-
-### Iteration A
-
-Cardboard prototype
-
-### Iteration B
-
-Another cardboard try?
-
-### Iteration C
-
-Wood planks
-
-### Iteration D
-
-Wood selfcut
-
-### Iteration E
-
-Wood cut by OBI
+A description of the implementation process can be found in the subchapters [Implementation Bin](https://annafhub.github.io/dpp_documentation/wastebin/implementation_bin.html) and [Implementation Waste Recognition](https://annafhub.github.io/dpp_documentation/wastebin/implementation_recognition.html)
 
 ## Materials and tools
 
-What materials and hardware did you use in your iterations and your final prototypes? Did you modify any ready-made devices? Did you build it from scratch? What tools did you use to implement your prototype?
-
-![Application](assets/simone.gif)
+**TODO** What materials and hardware did you use in your iterations and your final prototypes? Did you modify any ready-made devices? Did you build it from scratch? What tools did you use to implement your prototype?
 
 ## Conclusion
 
-Shortly summarize your project implementation process and the resulting outcome.
+**TODO** Shortly summarize your project implementation process and the resulting outcome.
 What problems and limitations did you face? What experiences did you make 
 
 
