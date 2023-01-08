@@ -34,6 +34,7 @@ A description of the implementation process can be found in the subchapters [Imp
 
 ## Materials and tools
 
+In the beginning the plan was to use cardboard for the first prototypes. However, cardboard was not stable enough. Therefore wood was used for the prototypes.
 **TODO** What materials and hardware did you use in your iterations and your final prototypes? Did you modify any ready-made devices? Did you build it from scratch? What tools did you use to implement your prototype?
 
 ## Conclusion
