@@ -34,8 +34,8 @@ A description of the implementation process can be found in the subchapters [Imp
 
 ## Materials and tools
 
-In the beginning the plan was to use cardboard for the first prototypes. However, cardboard was not stable enough. Therefore wood was used for the prototypes.
-**TODO** What materials and hardware did you use in your iterations and your final prototypes? Did you modify any ready-made devices? Did you build it from scratch? What tools did you use to implement your prototype?
+In the beginning the plan was to use cardboard for the first prototypes. However, cardboard was not stable enough. Therefore wood was used for the prototypes basic framework. The mechanical parts where mostly printed with PETG 3D-print fillament in order to have stable enough parts. All cableclips and mounts for the hardware were also 3D-printed. For the control of the motors and the basic logic an Arduino uno with motor shield was utilized. For the image recognition with camera and the output of the audio a Raspberry PI with a script of the programming language python was chosen. All in all the wastebin contained 1 stepper motos, 1 servo motor, 8 gears, 7 ball bearing, 1 spring, 1 ardunio, 1 motorshield, 1 raspberry PI, 1 camera, 1 speaker, 1 powerbank, 1 power supply (5V) and various small components containing about 750g 3D-print Fillament and screws.
+
 
 ## Conclusion
 
