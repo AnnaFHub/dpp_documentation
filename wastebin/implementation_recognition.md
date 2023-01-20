@@ -5,6 +5,7 @@ parent: wastebin
 nav_order: 3
 ---
 
+
 # Implementation of the waste recognition
 
 One of the core mechanics of this prototype is the recognition of different kinds of waste which triggers the catapult mechanism in case of the the wrong kind of trash is thrown into the bin.
@@ -15,9 +16,30 @@ For the recognizing different kinds of trash a raspberry pi in combination with 
 
 ## Iteration A
 
-The first approach to solve the waste recognition task was to find pre-trained models which could be easily used to recognize different kinds of waste. Beside being able to classify different kinds of waste the model also needed to be usable on a raspberry pi. After some research a firs pre-trained model was found. It was a tensorflow-lite model pre-trained on the COCO-dataset which includes 80 different classes of objects. Since there was no suitable waste dataset within reach at this point the idea was formed to test this model as a first try and only use the class "bottle" for recognition.
+The first approach to solve the waste recognition task was to find pre-trained models which could be easily used to recognize different kinds of waste. Beside being able to classify different kinds of waste the model also needed to be usable on a raspberry pi. After some research a firs pre-trained model was found. It was a tensorflow-lite model pre-trained on the COCO-dataset which includes 80 different classes of objects. 
+
+Since there was no suitable waste dataset within reach at this point the idea was formed to test this model as a first try and only use the class "bottle" for recognition.
 Meaning that the only distinction would have been between a bottle and every other kind of waste. But experimenting with the camera module it the realization came fast that the model was not working well enough for the purpose of this prototype. While the model was not a suitable solution a first code snippet for loading and applying models was found.
 
 ## Iteration B
 
-Since the first model was not working well enough the decision was made to look for pre-trained models which were trained on more specific datasets meaning models that were actually able to distinguish mainly between waste and did not include other objects. After some research a dataset called TACO ("trash annotated in context") on Kaggle. This dataset included only images of different kinds of waste and offered detection as well as classification.
+Since the first model was not working well enough the decision was made to look for pre-trained models which were trained on more specific datasets meaning models that were actually able to distinguish mainly between waste and did not include other objects. After some research a dataset called TACO ("trash annotated in context") on Kaggle. This dataset included only images of different kinds of waste and offered detection as well as classification. Another issue arose with the fact that the only on the kaggle website available pre-trained model weigths for this dataset was in the format of a tensorflow frozen-graph (.pb) file. 
+
+After some research attempts at converting this file to a format which could be loaded in a tensorflow-lite application were made.As it seems the method for this conversion process was no longer functional in the tensorflow2 and different attempts at using another version of tensorflow resulted in the same error. This option was then abondened. Another possible solution was to use another a different pytorch model and use this for inference during the detection process. 
+
+## Iteration C
+
+In this step a during research discovered pytorch model was used as well as a different tutorial for which it was necessary to install a new operating system on the raspberry pi. On the basis of the tutorial code the found pre-trained model was integrated and then tested with the help of the camera module. This model was trained on a different dataset which was also found on the Kaggle website.
+After a short test evaluation with the camera module the results were not as good as expected since the model was not very confident in its predictions as well as not very accurate. One of the reasons for this might be performance issue on the raspberry pie and another reason which might have played a role is that the model might have learned the background in the dataset images on accident as well. Since all of the images had the same greyish background. This circumstances might have given the model more problems with the recognition in real time than normally.
+
+Since there was jupyter-notebook attached another try to train a model ourselves which was more up to the task was attempted. Sadly the results did not much differ and after three more attempts with similar results a different solution for the problem was sought. 
+
+## Iteration D
+
+Since all previous attempts at using machine learning techniques were not especially successful the decision to use a computer vision-based approach was made. After some research a fitting tutorial for colour recognition was found. Based on this the final implementation of the colour recognion script was created. The idea behind it is quite simple. A lower and an upper boundary for the colour values are defined then a mask is created. On this basis the size of the colour area is determined and the decision if a certain colour is within the frame is made. This approach worked quite well from the start and it was also working well in for the live camera feed.
+
+Apart from the recognition it was also necessary to add the functionality for the audio files with the insults as well as send signals to the different arduino pins. The audio files were simply loaded to the raspberry pi and then within an array containing the file names chosen randomly to be played. As for the communication with the arduino there exist two methods within the script. One for the right kind of trash which lets down the 3D-printed board in the bin. And one method for what happens when the wrong kind of trash is recognized in the bin.
+
+Since it was not possibly to differentiate between different kinds of waste in reality the decision was made to use colours instead. More specifically red for the wrong kind of trash and green for right kind of trash.
+
+After some tweaking the code worked quite well. The main problem which remained was a nearly always full videobuffer which still had frames inside from the last recognition and thus caused quite some problems while debugging. But the simple solution for this was to just cal the read()-method of the openCV videocaputure object a few times when a colour was recognized.
