@@ -43,3 +43,5 @@ Apart from the recognition it was also necessary to add the functionality for th
 Since it was not possibly to differentiate between different kinds of waste in reality the decision was made to use colours instead. More specifically red for the wrong kind of trash and green for right kind of trash.
 
 After some tweaking the code worked quite well. The main problem which remained was a nearly always full videobuffer which still had frames inside from the last recognition and thus caused quite some problems while debugging. But the simple solution for this was to just cal the read()-method of the openCV videocaputure object a few times when a colour was recognized.
+
+As the final result the application is able to tell if a green or red object is within the bin and and trigger the accoring action. For a future iteration the integration of a "real" waste classification model that is able to tell different kinds of trash apart would be the goal. 
