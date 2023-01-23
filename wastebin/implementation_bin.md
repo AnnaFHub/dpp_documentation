@@ -10,7 +10,15 @@ In the following the implementation of the bin and the catapult are described. T
 
 ## Iteration A
 
-**TODO** first cardboard prototype und motor/rasperyPi/arduino setup
+In a first prototype pieces of cardboard where added together to get an overview of the needed parts and the size for the bin. It was soon realized that the cardboard will not be stable enough for the whole construction, especially not for the mechanical moving parts. Nevertheless this first interation gave a good overview which challenges to face during the further prototyping process. 
+
+![itA](assets/iterationA.jpeg)
+
+In a first iteration the electronical parts where also tested and a basic software was set up. This included simulating the later waste detection with pressing a button on the breadboard. The button mechanism was later replaced by pins on the Raspberry Pi. 
+For the stepper motor the library Accelstepper was used, the Bounce library was responsible for the Pin switches and reacting to them. For the servomotor the basic Ardunio Servo library was applied.
+
+![electronics](assets/firstelectronics.jpg)
+
 
 ## Iteration B
 
@@ -55,7 +63,7 @@ The catapult board was first made of wood. But since we didn't have an exact saw
 ![boardFront](assets/board1.jpg) ![boardTop](assets/board2.jpg)
 
 A bigger challenge was having to move the catapult plate in two directions. Since it was supposed to throw out when the garbage was wrong and throw in when the garbage was right. As a first attempt, a plate was attached to the catapult plate, which should rotate in the same axis. When the spring is pulled up it should hold against it and when it is thrown in it should rotate downwards or return the catapult board to its original position. Unfortunately, the servo motor was not strong enough to generate the necessary counter-thrust while the spring was being raised, and the construction was generally very unstable with this solution. 
-![armFail](assets/otherarm.jpg)
+![armFail](assets/otherboard.jpg)
 As a further solution, 2 servo motors were considered, each of which should move a bracket. One of them should hold against the spring when it is tensioned and one should release the lock when the trash falls down. While this solution was being built, it became apparent that it could also be achieved with the help of an offset attachment on the servo motor with only one motor. The picture shows the final attachment on the servo motor. To withstand the pressure while tensioning the spring, the upper arm was made thicker.
 ![armNice](assets/servoarm.jpg)
 
@@ -71,8 +79,12 @@ With the measurements gained from the previos wood prototype and a true to scale
 Additionally a new more stable part for mounting the spring to the gear, new pins for mounting the gears to the sides of the bin and small zylinders to prevent the gears from moving on these pins were 3d printet. 
 
 The creafting glass is mounted to the bin using 3D-printed brackets. To prevent trash from falling next to the catapult plate, another glass was attached to the top at a slight angle. This was not fixed with screws or glue to allow the emptying of the trash can. 
-![front](assets/front.jpg)![top](assets/top.jpg)
+![front](assets/front.jpg)![top](assets/top.jpg)![side](assets/side.jpg)
 As a last step, brackets for the Ardunio, the power supply and the Raspberry Pi were printed and attached to the back. To keep the cables as inconspicuous as possible, cable clips and cable ties were used. 
 ![cables](assets/cables.jpg)
 To be able to point the camera at the trash without the risk of being hit by the catapult, a camera mount was attached to the side of the bucket. This consists of several joints to make it possible to adjust the camera even after screwing it on.
 ![camera](assets/raspiCam.jpg)
+
+![throw](assets/throw.gif)
+![throw](assets/take2.gif)
+
