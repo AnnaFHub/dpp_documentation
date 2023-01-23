@@ -29,10 +29,11 @@ After some research attempts at converting this file to a format which could be 
 
 ## Iteration C
 
-In this step a during research discovered pytorch model was used as well as a different tutorial for which it was necessary to install a new operating system on the raspberry pi. On the basis of the tutorial code the found pre-trained model was integrated and then tested with the help of the camera module. This model was trained on a different dataset which was also found on the Kaggle website.
+In this step a during research discovered pytorch model was used as well as a different tutorial for which it was necessary to install a new operating system on the raspberry pi. On the basis of the tutorial code the found pre-trained ResNet50-model was integrated and then tested with the help of the camera module. This model was trained on a different dataset which was also found on the Kaggle website.
 After a short test evaluation with the camera module the results were not as good as expected since the model was not very confident in its predictions as well as not very accurate. One of the reasons for this might be performance issue on the raspberry pie and another reason which might have played a role is that the model might have learned the background in the dataset images on accident as well. Since all of the images had the same greyish background. This circumstances might have given the model more problems with the recognition in real time than normally.
 
-Since there was jupyter-notebook attached another try to train a model ourselves which was more up to the task was attempted. Sadly the results did not much differ and after three more attempts with similar results a different solution for the problem was sought. 
+Since there was jupyter-notebook attached another try to train a model ourselves which was more up to the task was attempted. For this different variations of some of the training parameters were tried (number of epochs, learnrate, optimizer, etc.).
+Sadly the results did not much differ and after three more attempts with similar results a different solution for the problem was sought. 
 
 ## Iteration D
 
