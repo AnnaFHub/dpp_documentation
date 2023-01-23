@@ -10,8 +10,7 @@ Project documentation for the **Design for Physical Prototyping** course 2022/23
 
 ## Abstract
 
-**TODO** Shortly summarize the intentions and ideas behind your project. 
-Lorem ipsum dolor sit amet. This project builds upon the idea of [Chindōgu](https://en.wikipedia.org/wiki/Chind%C5%8Dgu), the practice of inventing ingenious everyday gadgets that seem to be ideal solutions to particular problems, but which may cause more problems than they solve. Lorem ipsum dolor sit amet.
+The idea of this project was to create a waste bin that can classify the waste that is thrown into it. If the waste belongs into the bin, it is taken, otherwhise it is catapulted out of the bin, while the person that has thrown the item into the bin gets insulted. Several iterations were necessary to get to the final prototype, both for the waste recognition part, as well as, for the bin itself.
 
 ## Concept
 
@@ -23,14 +22,10 @@ The image below shows a first sketch of the wastebin.
 
 ![FirstSketch](assets/ersteSkizze.png)
 
-**TODO** Ergänzungen? Here you could summarize your project proposal.
-How did you plan to build your prototype? 
-Did you arrive at your idea immediately or did you iterate over it? Describe your process. 
-
 
 ## Implementation
 
-A description of the implementation process can be found in the subchapters [Implementation Bin](https://annafhub.github.io/dpp_documentation/wastebin/implementation_bin.html) and [Implementation Waste Recognition](https://annafhub.github.io/dpp_documentation/wastebin/implementation_recognition.html)
+A description of the implementation process can be found in the subchapters [Implementation Bin](https://annafhub.github.io/dpp_documentation/wastebin/implementation_bin.html) and [Implementation Waste Recognition](https://annafhub.github.io/dpp_documentation/wastebin/implementation_recognition.html). First focuses on the implementation of the bin itself, while the second describes the process of creating the recognition part of the project.
 
 ## Materials and tools
 
@@ -42,6 +37,5 @@ In the beginning the plan was to use cardboard for the first prototypes. However
 **TODO** Shortly summarize your project implementation process and the resulting outcome.
 What problems and limitations did you face? What experiences did you make 
 
-
-{: .note }
-Edit this page and all the subpages according to the specifics of your project. You don't need to use the provided headlines, just keep it well structured. If one part of the documentation gets too lengthy put it into a subpage.
+In the beginning we tried to work with cardboard to create a first prototype, however this was not stable enough, why we quickly moved on to using wood for the base construction. After facing problems with using the stepper motor as it was for the catapulting mechanism, gears were added to reduce the force necessary by the motor. The original mechanism for folding the catapult platform up and down had to be adapted aswell, as it could not prevent the catapult platform from flipping up. The second iteration of that mechanism then worked very well. 
+For the recognition of the waste, we could not manage to create an AI that would classify the waste with enough accuracy. Therefore, colordetection was used to seperate items into differnt groups.
