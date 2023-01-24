@@ -20,15 +20,16 @@ The detection of wrong garbage was a bit more unclear. Multiple options were con
 
 The image below shows a first sketch of the waste bin.
 
-![FirstSketch](assets/ersteSkizze.png)
+<img src="assets/ersteSkizze.png" style="width: 500px; height: auto;">
 
 
 ## Implementation
 
 A description of the implementation process can be found in the subchapters [Implementation Bin](https://annafhub.github.io/dpp_documentation/wastebin/implementation_bin.html) and [Implementation Waste Recognition](https://annafhub.github.io/dpp_documentation/wastebin/implementation_recognition.html). The first focuses on the implementation of the bin itself, while the second describes the process of creating the recognition part of the project.
 
-![throw](assets/throw2.gif)
-<img src="assets/take.gif" width="300" height="510">
+<img src="assets/throw2.gif" style="width: auto; height: 600px;">
+<img src="assets/take.gif" style="width: auto; height: 600px;">
+
 
 The implementation was done by a group of 3 people, consiting of Anna Maschek, Lisa Lamplmair, Rita Hainzl. The tasks were splitted as following: 
 - Lisa: 3D-printing, mechanical construction and drawing, Arduino Code and electronical setup
