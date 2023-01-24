@@ -30,6 +30,11 @@ A description of the implementation process can be found in the subchapters [Imp
 ![throw](assets/throw2.gif)
 <img src="assets/take.gif" width="300" height="510">
 
+The implementation was done by a group of 3 people, consiting of Anna Maschek, Lisa Lamplmair, Rita Hainzl. The tasks were splitted as following: 
+- Lisa: 3D-printing, mechanical construction and drawing, Arduino Code and electronical setup
+* Rita: python and raspberry code, image detection, waste recognition
++ Anna: mechanical construction, audio generation, woodworking
+
 ## Materials and tools
 
 In the beginning, the plan was to use cardboard for the first prototypes. However, cardboard was not stable enough. Therefore, wood was used for the prototype's basic framework. The mechanical parts were mostly printed with PETG 3D-print filament in order to have stable enough parts. All cable clips and mounts for the hardware were also 3D-printed. For the control of the motors and the basic logic, an Arduino UNO with motor shield was utilized. For the image recognition with camera and the output of the audio, a Raspberry Pi with a script of the programming language python was chosen. All in all the waste bin contained 1 stepper motor, 1 servo motor, 8 gears, 7 ball bearing, 1 spring, 1 Arduino, 1 motor shield, 1 Raspberry Pi, 1 camera, 1 speaker, 1 powerbank, 1 power supply (5V) and various small components containing about 750g 3D-print Filament and screws.

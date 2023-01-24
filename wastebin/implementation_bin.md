@@ -12,7 +12,7 @@ In the following, the implementation of the bin and the catapult are described. 
 
 In a first prototype, pieces of cardboard were added together to get an overview of the needed parts and the size for the bin. It was soon realized that the cardboard will not be stable enough for the whole construction, especially not for the mechanical moving parts. Nevertheless, this first iteration gave a good overview which challenges to face during the further prototyping process. 
 
-![itA](assets/iterationA.jpeg)
+<img src="assets/iterationA.jpeg" style="width: 500px; height: auto;">
 
 In a first iteration, the electronic parts were also tested, and a basic software was set up. This included simulating the later waste detection with pressing a button on the breadboard. The button mechanism was later replaced by pins on the Raspberry Pi. 
 For the stepper motor the library Accelstepper was used, the Bounce library was responsible for the Pin switches and reacting to them. For the servomotor, the basic Arduino Servo library was applied.
