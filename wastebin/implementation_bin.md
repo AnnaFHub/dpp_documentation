@@ -58,6 +58,7 @@ As the stepper motor by itself was not strong enough to pull the spring as far a
 <img src="assets/gears.jpeg" style="width: 500px; height: auto;">
 
 By always combining a bigger gear with a smaller gear, as can be seen in the image above, the spring could be pulled further and further with every additional gear. When using four combined gears and a small gear on the stepper motor, it was possible to pull the spring far enough to throw things with the catapult. The overall gear ratio used for the final catapult version was 1:18. The motor itself was attached to the bottom of the trash bin. Since no standard mounting was provided there, a bracket was made with the 3D printer.
+
 <img src="assets/gears_v1_front.jpeg" style="width: 500px; height: auto;">
 <img src="assets/gears_v1_side.jpeg" style="width: 500px; height: auto;">
 <img src="assets/motormount1.jpg" style="width: auto; height: 350px;">
