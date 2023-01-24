@@ -7,22 +7,22 @@ nav_order: 1
 
 # Project proposal
 
-The idea is to create a wastebin that recognizes if the waste that is thrown into it belongs into this bin.
+The idea is to create a waste bin that recognizes if the waste that is thrown into it belongs into this bin.
 
 After the user throws trash into the bin, it recognizes if the piece belongs into the bin.
 If the waste belongs into the bin, it is thrown into the collecting part of the bin.
 However, if it does not belong into the bin, it gets thrown back at the user and makes a loud sound.
 
-A malfunction would be if wrong waste is accapted or if correct waste is thrown back at the user.
+A malfunction would be if wrong waste is accepted or if correct waste is thrown back at the user.
 
-The device is uncomfortable for people throwing in the wrong kind of trash and getting trash thrown at them by the bin and being publicly shamed for not recycling propperly.
+The device is uncomfortable for people throwing in the wrong kind of trash and getting trash thrown at them by the bin and being publicly shamed for not recycling properly.
 
 ## Implementation
 
-A trash bin is equipped with a camera and checks if the trash about to be thrown in is the correct kind of trash. For this an AI might be used, that runns on an Arduino. If it is the wrong kind of trash a catapult activates inside the bin and tries to throw the item back out of the bin and additionally makes a loud noise using a speaker.
-If it is the correct kind of trash the catapult moves down, so that it stays in the bin.
+A trash bin is equipped with a camera and checks if the trash about to be thrown in is the correct kind of trash. For this, an AI might be used, that runs on an Arduino. If it is the wrong kind of trash, a catapult activates inside the bin and tries to throw the item back out of the bin and additionally makes a loud noise using a speaker.
+If it is the correct kind of trash, the catapult moves down, so that it stays in the bin.
 
-Depending on the time available and the overall results with training the AI, it might be replace with a Wizard of Oz prototype where a button is pressed depending on the needed action.
+Depending on the time available and the overall results with training the AI, it might be replaced with a Wizard of Oz prototype where a button is pressed depending on the needed action.
 
 ## References
 Dataset for AI Model for plastic trash recognition:
